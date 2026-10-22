@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Guide — Комп'ютерні комплектуючі</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #0d1424; color: #eef3ff; line-height: 1.6; }
+    header { background: #141f34; padding: 18px 8%; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .logo { font-size: 24px; font-weight: bold; color: #67b7ff; }
+    nav a { color: #eef3ff; text-decoration: none; margin-left: 18px; }
+    nav a:hover { color: #67b7ff; }
+    .hero { padding: 100px 8%; text-align: center; background: linear-gradient(135deg, #172e51, #0d1424); }
+    h1 { font-size: clamp(32px, 5vw, 52px); margin: 0 0 16px; }
+    .hero p { max-width: 650px; margin: 0 auto 30px; color: #c9d7ea; }
+    .button { display: inline-block; padding: 12px 26px; border-radius: 8px; background: #398bea; color: white; text-decoration: none; font-weight: bold; }
+    .button:hover { background: #62aaff; }
+    section { padding: 65px 8%; }
+    h2 { font-size: 30px; margin: 0 0 25px; text-align: center; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; }
+    .card { background: #19263d; border: 1px solid #293b58; padding: 28px 22px; border-radius: 14px; transition: transform .2s; }
+    .card:hover { transform: translateY(-5px); }
+    .symbol { font-size: 40px; }
+    .card h3 { color: #75bcff; margin: 12px 0; }
+    .card p, .advice p { color: #c7d3e5; }
+    .advice { background: #121d30; }
+    .advice-content { max-width: 760px; margin: auto; }
+    .advice li { margin: 12px 0; }
+    .contact-section { background: #101b2d; }
+    .contact-intro { text-align: center; color: #c7d3e5; margin: -8px auto 26px; max-width: 620px; }
+    .contact-form { max-width: 560px; margin: auto; padding: 28px; background: #19263d; border: 1px solid #293b58; border-radius: 14px; }
+    .contact-form label { display: block; margin: 0 0 7px; font-weight: bold; }
+    .contact-form input, .contact-form textarea { display: block; width: 100%; margin: 0 0 20px; padding: 12px 14px; border: 1px solid #405574; border-radius: 8px; background: #0d1424; color: #eef3ff; font: inherit; }
+    .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid #67b7ff; outline-offset: 1px; }
+    .contact-form textarea { min-height: 130px; resize: vertical; }
+    .contact-form button { border: 0; cursor: pointer; font: inherit; }
+    footer { padding: 30px 8%; text-align: center; background: #0a101c; color: #aabbd0; }
+    @media (max-width: 600px) { header { justify-content: center; text-align: center; } nav a { margin: 0 8px; } .hero { padding: 75px 7%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PC Guide</div>
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#components">Комплектуючі</a>
+      <a href="#advice">Поради</a>
+      <a href="#feedback">Зворотний зв’язок</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h1>Світ комп'ютерних комплектуючих</h1>
+      <p>Дізнайтеся, з чого складається сучасний комп'ютер та як правильно обрати основні компоненти для навчання, роботи й ігор.</p>
+      <a class="button" href="#components">Переглянути комплектуючі</a>
+    </div>
+
+    <section id="components">
+      <h2>Основні комплектуючі</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="symbol">🧠</div>
+          <h3>Процесор (CPU)</h3>
+          <p>Виконує обчислення та керує роботою програм. Від його продуктивності залежить швидкість багатьох завдань.</p>
+        </article>
+        <article class="card">
+          <div class="symbol">🎮</div>
+          <h3>Відеокарта (GPU)</h3>
+          <p>Обробляє графіку та допомагає відтворювати ігри, відео й тривимірні зображення.</p>
+        </article>
+        <article class="card">
+          <div class="symbol">💾</div>
+          <h3>Оперативна пам'ять (RAM)</h3>
+          <p>Тимчасово зберігає дані відкритих програм, забезпечуючи зручну багатозадачність.</p>
+        </article>
+        <article class="card">
+          <div class="symbol">⚡</div>
+          <h3>Накопичувач (SSD)</h3>
+          <p>Зберігає операційну систему, файли та програми. SSD прискорює їх завантаження.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="advice" id="advice">
+      <h2>Поради щодо вибору</h2>
+      <div class="advice-content">
+        <p>Перед придбанням комплектуючих варто визначити, для яких завдань потрібен комп'ютер.</p>
+        <ul>
+          <li>Для навчання та роботи обирайте збалансований процесор і достатній обсяг оперативної пам'яті.</li>
+          <li>Для сучасних ігор зверніть увагу на продуктивність відеокарти.</li>
+          <li>Для швидкого запуску системи використовуйте SSD.</li>
+          <li>Перевіряйте сумісність комплектуючих перед покупкою.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-section" id="feedback">
+      <h2>Зворотний зв'язок</h2>
+      <p class="contact-intro">Маєте запитання щодо комп'ютерних комплектуючих? Напишіть нам!</p>
+      <form class="contact-form" action="https://send.webforms.to/wft_2p5r4crhh3fjwkjz49si" method="POST">
+        <label for="visitor-name">Ваше ім'я</label>
+        <input id="visitor-name" name="name" type="text" placeholder="Введіть ваше ім'я" autocomplete="name" required maxlength="100">
+        <label for="visitor-email">Електронна пошта</label>
+        <input id="visitor-email" name="email" type="email" placeholder="example@gmail.com" autocomplete="email" required maxlength="254">
+        <label for="visitor-message">Повідомлення</label>
+        <textarea id="visitor-message" name="message" placeholder="Напишіть ваше повідомлення..." required maxlength="5000"></textarea>
+        <button class="button" type="submit">Надіслати повідомлення</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <p><strong>PC Guide</strong> — навчальний сайт про комп'ютерні комплектуючі.</p>
+    <p>© 2026 PC Guide. Створено для навчального проєкту.</p>
+  </footer>
+</body>
+</html>
